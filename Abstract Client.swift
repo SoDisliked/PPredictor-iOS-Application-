@@ -223,7 +223,7 @@ internal struct HostStatus {
 
         /// Add the operating system of the platform.
         ///
-        if #available(iOS: 10.0.0, *) {
+        if #available(ios: 10, *) {
             let iOSVersion = ProcessInfo.processInfo.operatingSystemVersion
             var iOSVersionString = "\(iOSVersion.majorVersion).\(iOSVersion.minorVersion)"
             if iOSVersion.patchVersion != 0 {
